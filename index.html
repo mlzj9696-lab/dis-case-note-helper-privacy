@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIS Case Note Helper — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555555;
+    --accent: #0f766e;
+    --border: #e5e5e5;
+    --code-bg: #f2f2f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #eaeaea;
+      --muted: #b0b0b0;
+      --accent: #2dd4bf;
+      --border: #2a2a2a;
+      --code-bg: #1e1e1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin-bottom: 4px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 2.2em;
+    margin-bottom: 0.6em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+  p { margin: 0.9em 0; }
+  ul { padding-left: 1.3em; }
+  li { margin: 0.5em 0; }
+  code {
+    background: var(--code-bg);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    font-size: 0.92em;
+  }
+  strong { color: var(--fg); }
+  .contact {
+    font-size: 1.05rem;
+  }
+  footer {
+    margin-top: 3em;
+    padding-top: 1.2em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta"><strong>DIS Case Note Helper (Chrome extension)</strong> — Last updated: 26 September 2026</p>
+
+  <p>DIS Case Note Helper is a Chrome extension built for clinic staff to insert saved clinical-note phrases and text shortcuts into note fields on dis.moh.gov.my. This page explains what data the extension handles and, just as importantly, what it does not do.</p>
+
+  <p>In short: the extension does not send any of your data to the developer or to any third-party server. Everything it stores stays inside your own Google/Chrome account, using Chrome's built-in storage.</p>
+
+  <h2>What is stored, and where</h2>
+  <p>The extension saves the following, so your setup is available whenever you open the panel:</p>
+  <ul>
+    <li><strong>Your saved phrases and text shortcuts</strong> — the clinical note snippets you add or edit. These are saved with Chrome's <code>chrome.storage.sync</code> API, which is Google's own account-sync storage. This is what lets the same phrases appear on your other devices when you're signed into the same Chrome profile.</li>
+    <li><strong>Your trigger prefix for shortcuts</strong> (e.g. <code>/</code>) — also saved via <code>chrome.storage.sync</code>.</li>
+    <li><strong>On/off state for shortcuts, and your login-autofill fields</strong> (Negeri, Daerah, Klinik, and saved Nama Pengguna / Nama Pembantu entries) — saved locally on your device only, via <code>chrome.storage.local</code>. These are not synced across devices.</li>
+  </ul>
+  <p>All of this data is written and read only by the extension itself, through Chrome's own storage APIs. None of it passes through, or is visible to, the developer.</p>
+
+  <h2>What the extension does on web pages</h2>
+  <p>The extension only runs on pages under moh.gov.my (specifically dis.moh.gov.my). On those pages it:</p>
+  <ul>
+    <li>Inserts the phrase or shortcut text you select into the currently focused note field.</li>
+    <li>Optionally fills in login fields (Negeri, Daerah, Klinik, Kata Laluan, Nama Pengguna, Nama Pembantu) that you've chosen to save, if you've turned autofill on.</li>
+  </ul>
+  <p>It does not read, log, or transmit any other content from these or any other pages you visit.</p>
+
+  <h2>What the extension does not do</h2>
+  <ul>
+    <li>It does not collect, sell, or transfer personal data, health information, financial information, credentials, browsing history, or website content to the developer or any third party.</li>
+    <li>It does not use any remote/third-party servers, analytics, or tracking of any kind.</li>
+    <li>It does not run any code that isn't included in the extension package itself (no remote scripts, no eval).</li>
+  </ul>
+
+  <h2>Your saved password field</h2>
+  <p>The optional "Kata Laluan" (password) field used for login autofill is saved only in <code>chrome.storage.local</code> on your own device, for your own convenience. It is never synced, never transmitted anywhere by the extension, and is only ever read back to fill the login form on dis.moh.gov.my.</p>
+
+  <h2>Uninstalling</h2>
+  <p>Removing the extension from Chrome deletes its local storage. Data held in <code>chrome.storage.sync</code> is cleared from Google's sync storage for this extension as well, following Chrome's standard behavior for synced extension data.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "Last updated" date above will be revised accordingly.</p>
+
+  <h2>Contact</h2>
+  <p class="contact">Questions about this policy can be sent to: <strong>mlzj9696@gmail.com</strong></p>
+
+  <footer>DIS Case Note Helper — developed by Matt KP Sipitang.</footer>
+</main>
+</body>
+</html>
