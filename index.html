@@ -78,7 +78,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta"><strong>DIS Case Note Helper (Chrome extension)</strong> — Last updated: 26 September 2026</p>
+  <p class="meta"><strong>DIS Case Note Helper (Chrome extension)</strong> — Last updated: 03 October 2026</p>
 
   <p>DIS Case Note Helper is a Chrome extension built for clinic staff to insert saved clinical-note phrases and text shortcuts into note fields on dis.moh.gov.my. This page explains what data the extension handles and, just as importantly, what it does not do.</p>
 
@@ -94,12 +94,13 @@
   <p>All of this data is written and read only by the extension itself, through Chrome's own storage APIs. None of it passes through, or is visible to, the developer.</p>
 
   <h2>What the extension does on web pages</h2>
-  <p>The extension only runs on pages under moh.gov.my (specifically dis.moh.gov.my). On those pages it:</p>
-  <ul>
-    <li>Inserts the phrase or shortcut text you select into the currently focused note field.</li>
-    <li>Optionally fills in login fields (Negeri, Daerah, Klinik, Kata Laluan, Nama Pengguna, Nama Pembantu) that you've chosen to save, if you've turned autofill on.</li>
-  </ul>
-  <p>It does not read, log, or transmit any other content from these or any other pages you visit.</p>
+<p>The extension only runs on pages under moh.gov.my (specifically dis.moh.gov.my). On those pages it:</p>
+<ul>
+  <li>Inserts the phrase or shortcut text you select into the currently focused note field.</li>
+  <li>Optionally fills in login fields (Negeri, Daerah, Klinik, Kata Laluan, Nama Pengguna, Nama Pembantu) that you've chosen to save, if you've turned autofill on.</li>
+  <li>With the optional "Auto Note" feature, reads the treatment/charge table (Jadual Caj), treatment plan (Pelan Rawatan), and tooth-chart markings already displayed on the page, and uses them — together with your own saved shortcuts and templates — to draft the clinical note text for you to review before saving.</li>
+</ul>
+<p>All of this happens locally in your browser. The extension does not transmit any page content, patient data, or clinical information to the developer or to any external server.</p>
 
   <h2>What the extension does not do</h2>
   <ul>
